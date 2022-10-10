@@ -127,13 +127,24 @@
            * Progress bar animations
            /* ---------------------------------------------- */
 
-    $('.progress-bar').each(function (i) {
-      $(this).appear(function () {
-        var percent = $(this).attr('aria-valuenow');
-        $(this).animate({ 'width': percent + '%' });
-        $(this).find('span').animate({ 'opacity': 1 }, 900);
-        $(this).find('span').countTo({ from: 0, to: percent, speed: 900, refreshInterval: 30 });
-      });
+    // $('.progress-bar').each(function (i) {
+    //   $(this).appear(function () {
+    //     var percent = $(this).attr('aria-valuenow');
+    //     $(this).animate({ 'width': percent + '%' });
+    //     $(this).find('span').animate({ 'opacity': 1 }, 900);
+    //     $(this).find('span').countTo({ from: 0, to: percent, speed: 900, refreshInterval: 30 });
+    //   });
+    // });
+
+
+    /* ---------------------------------------------- /*
+       * Rotate
+       /* ---------------------------------------------- */
+
+    $(".rotate").textrotator({
+      animation: "dissolve",
+      separator: "|",
+      speed: 3000
     });
   });
 })(jQuery);
@@ -142,49 +153,49 @@
        * Rotate
        /* ---------------------------------------------- */
 
-$(".rotate").textrotator({
-  animation: "dissolve",
-  separator: "|",
-  speed: 3000
-});
+// $(".rotate").textrotator({
+//   animation: "dissolve",
+//   separator: "|",
+//   speed: 3000
+// });
 
 
 /* ---------------------------------------------- /*
  * our works
 /* ---------------------------------------------- */
 
-var worksgrid = $('#works-grid'),
-  worksgrid_mode;
+// var worksgrid = $('#works-grid'),
+//   worksgrid_mode;
 
-if (worksgrid.hasClass('works-grid-masonry')) {
-  worksgrid_mode = 'masonry';
-} else {
-  worksgrid_mode = 'fitRows';
-}
+// if (worksgrid.hasClass('works-grid-masonry')) {
+//   worksgrid_mode = 'masonry';
+// } else {
+//   worksgrid_mode = 'fitRows';
+// }
 
-worksgrid.imagesLoaded(function () {
-  worksgrid.isotope({
-    layoutMode: worksgrid_mode,
-    itemSelector: '.work-item'
-  });
-});
+// worksgrid.imagesLoaded(function () {
+//   worksgrid.isotope({
+//     layoutMode: worksgrid_mode,
+//     itemSelector: '.work-item'
+//   });
+// });
 
-$('#filters a').click(function () {
-  $('#filters .current').removeClass('current');
-  $(this).addClass('current');
-  var selector = $(this).attr('data-filter');
+// $('#filters a').click(function () {
+//   $('#filters .current').removeClass('current');
+//   $(this).addClass('current');
+//   var selector = $(this).attr('data-filter');
 
-  worksgrid.isotope({
-    filter: selector,
-    animationOptions: {
-      duration: 750,
-      easing: 'linear',
-      queue: false
-    }
-  });
+//   worksgrid.isotope({
+//     filter: selector,
+//     animationOptions: {
+//       duration: 750,
+//       easing: 'linear',
+//       queue: false
+//     }
+//   });
 
-  return false;
-});
+//   return false;
+// });
 
 // /* ---------------------------------------------- /*
 //         * Progress bar animations

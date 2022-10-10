@@ -259,10 +259,10 @@ h6 {
 
 /* Desktop Navigation */
 
-.main-nav {
+/* .main-nav { */
   /* Drop Down */
   /* Deep Drop Down */
-}
+/* } */
 
 .main-nav,
 .main-nav * {
@@ -1497,6 +1497,21 @@ h6 {
   transition: all 0.4s ease-in-out;
 }
 
+@media (max-width: 767px) {
+  .c-img1 {
+    max-width: 30%;
+    height: auto;
+  }
+  .c-img2 {
+    max-width: 40%;
+    height: auto;
+  }
+  .c-img3 {
+    max-width: 50%;
+    height: auto;
+  }
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -2064,7 +2079,24 @@ section {
   padding: 0 6px;
 }
 
+.whats-app {
+  position: fixed;
+  /* width: 60px;
+  height: 60px; */
+  bottom: 15px;
+  /* right: 15px; */
+  /* background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999; */
+  z-index: 100;
+}
 
+.my-float {
+  margin-top: 16px;
+}
 
 /*--------------------------------------------------------------
 # Responsive Media Queries
