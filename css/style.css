@@ -285,18 +285,21 @@ h6 {
 .main-nav a {
   display: block;
   position: relative;
-  color: #004289;
+  /* color: #004289; */
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  /* font-weight: 500; */
+  color: #111;
+  font-weight: bold;
 }
 
 .main-nav a:hover,
 .main-nav .active > a,
 .main-nav li:hover > a {
-  color: #007bff;
+  /* color: #007bff; */
+  color: orangered;
   text-decoration: none;
 }
 
@@ -1096,6 +1099,8 @@ h6 {
 #why-us {
   padding: 60px 0;
   background: #004a99;
+  /* background-image: linear-gradient( #e31e25d7, #ef7d1ae5); */
+  /* background-image: linear-gradient(#ff020b, #fc7500); */
 }
 
 #why-us .section-header h3,
@@ -1105,7 +1110,9 @@ h6 {
 
 #why-us .card {
   background: #00458f;
+  /* background: white; */
   border-color: #00458f;
+  /* border-color: black; */
   border-radius: 10px;
   margin: 0 15px;
   padding: 15px 0;
@@ -1118,12 +1125,15 @@ h6 {
 #why-us .card:hover {
   background: #003b7a;
   border-color: #003b7a;
+  /* background-image: linear-gradient(#ff020b, #fc7500); */
+  /* background-image: linear-gradient( #e31e25d7, #ef7d1ae5); */
 }
 
 #why-us .card i {
   font-size: 48px;
   padding-top: 15px;
   color: #bfddfe;
+  /* color: black; */
 }
 
 #why-us .card h5 {
@@ -1134,6 +1144,7 @@ h6 {
 #why-us .card p {
   font-size: 14px;
   color: #d8eafe;
+  /* color: black; */
   text-align: left;
 }
 
@@ -1517,6 +1528,21 @@ h6 {
   }
   .c-img3 {
     max-width: 50%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .c-img1 {
+    max-width: 80%;
+    height: auto;
+  }
+  .c-img2 {
+    max-width: 70%;
+    height: auto;
+  }
+  .c-img3 {
+    max-width: 100%;
     height: auto;
   }
 }
