@@ -50,7 +50,8 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #007bff;
+  /* background: #007bff; */
+  background: #ff4400d8;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -62,6 +63,10 @@ h6 {
   bottom: 15px;
   transition: background 0.5s;
   z-index: 11;
+}
+
+.back-to-top:hover {
+  background-image: linear-gradient(#ff020b, #fc7500);
 }
 
 .back-to-top i {
@@ -136,7 +141,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-pages {
-  height: 60px;
+  height: 65px;
   padding: 10px 0;
 }
 
@@ -473,9 +478,11 @@ h6 {
 
 .section-header h3 {
   font-size: 36px;
-  color: #283d50;
+  /* color: #283d50; */
+  color: orangered;
   text-align: center;
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-weight: bold;
   position: relative;
 }
 
@@ -624,6 +631,7 @@ h6 {
   font-weight: 600;
   font-size: 24px;
   padding-left: 30px;
+  color: #111;
 }
 
 .f-img {
@@ -1074,7 +1082,8 @@ h6 {
 }
 
 #services .box:hover .title a {
-  color: #007bff;
+  /* color: #007bff; */
+  color: none;
 }
 
 #services .description {
@@ -1684,7 +1693,8 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #2487ce;
+  /* color: #2487ce; */
+  color: black;
   float: left;
   width: 44px;
   height: 44px;
@@ -1696,19 +1706,25 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
+.contact .info i:hover {
+  color: orange;
+  background-image: linear-gradient(#ff020b, #fc7500);
+}
+
 .contact .info h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #124265;
+  /* color: #124265; */
+  color: #111;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #217bbc;
+  /* color: #217bbc; */
 }
 
 .contact .info .email,
@@ -1716,12 +1732,12 @@ section {
   margin-top: 40px;
 }
 
-.contact .info .email:hover i,
+/* .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
   background: #2487ce;
   color: #fff;
-}
+} */
 
 .contact .php-email-form {
   width: 100%;
@@ -2017,6 +2033,14 @@ section {
   margin: 0 0 15px;
 }
 
+.widget a {
+  color: #aaa;
+}
+
+.widget a:hover {
+  color: #fff;
+}
+
 .img1 {
   padding: 0 0 10px;
   margin: 0 0 12px;
@@ -2065,18 +2089,28 @@ section {
 }
 
 .footer .copyright {
-  margin: 0;
+  margin: 0px 0px 0px 50px;
   color: white;
   letter-spacing: 0px !important;
 }
 
 .footer .footer-social-links {
   text-align: right;
+  margin-right: 40px;
 }
 
 .footer .footer-social-links a {
   display: inline-block;
   padding: 0 6px;
+  color: #ff4400d8;
+}
+
+.copyright a {
+  color: #aaa;
+}
+
+.copyright a:hover {
+  color: #fff;
 }
 
 .whats-app {
