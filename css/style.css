@@ -1098,58 +1098,75 @@ h6 {
 
 #why-us {
   padding: 60px 0;
-  background: #004a99;
+  /* background: #004a99; */
   /* background-image: linear-gradient( #e31e25d7, #ef7d1ae5); */
   /* background-image: linear-gradient(#ff020b, #fc7500); */
 }
 
-#why-us .section-header h3,
+/* #why-us .section-header h3,
 #why-us .section-header p {
   color: #fff;
-}
+} */
 
 #why-us .card {
-  background: #00458f;
+  /* background: #00458f; */
   /* background: white; */
-  border-color: #00458f;
+  /* border-color: #00458f; */
   /* border-color: black; */
-  border-radius: 10px;
+  /* background-image: linear-gradient(#e31e25e0, #ef7d1ae0); */
+  border-color: #111;
+  
   margin: 0 15px;
   padding: 15px 0;
   text-align: center;
   color: #fff;
   transition: 0.3s ease-in-out;
   height: 100%;
+  border: 1px solid transparent;
+  border-image: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);;
+  border-image-slice: 1;
+  border-radius: 10px;
 }
 
 #why-us .card:hover {
-  background: #003b7a;
-  border-color: #003b7a;
+  /* background: #003b7a; */
+  /* border-color: #003b7a; */
+  /* background: rgba(255, 166, 0, 0.658); */
+  /* background-image: linear-gradient(#e31e25cb, #ef7d1ac7); */
+  /* border-color: #111; */
   /* background-image: linear-gradient(#ff020b, #fc7500); */
   /* background-image: linear-gradient( #e31e25d7, #ef7d1ae5); */
+  /* border: 1px solid transparent;
+  border-image: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);;
+  border-image-slice: 1; */
+  /* background: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%); */
+  
 }
 
 #why-us .card i {
   font-size: 48px;
   padding-top: 15px;
-  color: #bfddfe;
-  /* color: black; */
+  /* color: #bfddfe; */
+  color: #111;
 }
 
 #why-us .card h5 {
   font-size: 22px;
   font-weight: 600;
+  color: #111;
 }
 
 #why-us .card p {
   font-size: 14px;
-  color: #d8eafe;
+  /* color: #d8eafe; */
+  color: #111;
   /* color: black; */
   text-align: left;
 }
 
 #why-us .card .readmore {
-  color: #fff;
+  /* color: #fff; */
+  color: #111;
   font-weight: 600;
   display: inline-block;
   transition: 0.3s ease-in-out;
@@ -1169,7 +1186,8 @@ h6 {
   font-weight: bold;
   font-size: 48px;
   display: block;
-  color: #fff;
+  /* color: #fff; */
+  color: orange;
 }
 
 #why-us .counters p {
@@ -1177,7 +1195,10 @@ h6 {
   margin: 0 0 20px 0;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  color: #cce5ff;
+  font-weight: 600;
+  /* color: #cce5ff; */
+  /* color: #cce5ff; */
+  color: orangered;
 }
 
 /* Portfolio Section
@@ -1431,7 +1452,9 @@ h6 {
 }
 
 #team .member:hover .member-info {
-  background: rgba(0, 62, 128, 0.7);
+  background-image: linear-gradient(#e31e2594, #ef7d1a93);
+  /* background: rgba(255, 187, 0, 0.7); */
+  /* background: rgba(0, 62, 128, 0.7); */
   opacity: 1;
   transition: 0.4s;
 }
@@ -1465,7 +1488,8 @@ h6 {
 }
 
 #team .member .social a:hover {
-  color: #007bff;
+  /* color: #007bff; */
+  color: orangered;
 }
 
 #team .member .social i {
