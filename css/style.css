@@ -536,8 +536,11 @@ h6 {
 --------------------------------*/
 
 #about {
-  background: #fff;
-  padding: 60px 0;
+  /* background: #fff;
+  padding: 60px 0; */
+  padding: 60px 0 40px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  background-color: #f8fbfe;
 }
 
 #about .about-container .background {
@@ -1041,8 +1044,11 @@ h6 {
 --------------------------------*/
 
 #services {
-  padding: 60px 0 40px 0;
-  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  /* padding: 60px 0 40px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1); */
+  background: #fff;
+  padding: 60px 0;
+
 }
 
 #services .box {
@@ -1122,17 +1128,20 @@ h6 {
   color: #fff;
   transition: 0.3s ease-in-out;
   height: 100%;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent;
   border-image: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);;
-  border-image-slice: 1;
-  border-radius: 10px;
+  border-image-slice: 1; */
+  /* border-radius: 10px; */
 }
 
 #why-us .card:hover {
   /* background: #003b7a; */
   /* border-color: #003b7a; */
   /* background: rgba(255, 166, 0, 0.658); */
-  /* background-image: linear-gradient(#e31e25cb, #ef7d1ac7); */
+  background-image: linear-gradient(#e31e25cb, #ef7d1ac7);
+  border: 1px solid transparent;
+  border-image: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);;
+  border-image-slice: 1;
   /* border-color: #111; */
   /* background-image: linear-gradient(#ff020b, #fc7500); */
   /* background-image: linear-gradient( #e31e25d7, #ef7d1ae5); */
