@@ -201,7 +201,7 @@ h6 {
 }
 
 #intro .intro-info h2 span {
-  color: #74b5fc;
+  /* color: #74b5fc; */
   text-decoration: underline;
 }
 
@@ -256,6 +256,20 @@ h6 {
   font-size: 40px;
   /* margin-bottom: 10px; */
   color: white;
+}
+
+.tagline {
+  color: orangered;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 455px) {
+  #intro .intro-info h2 {
+    font-size: 27px !important;
+  }
+  .tagline {
+    font-size: 23px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -470,6 +484,28 @@ h6 {
 
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
+}
+
+.getstarted,
+.getstarted:focus {
+  /* background: #2487ce; */
+  background-image: linear-gradient(#e31e24, #ef7f1a);
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 4px;
+  color: #fff !important;
+}
+
+.mobile-nav .getstarted,
+.getstarted:focus {
+  margin-right: 70px;
+}
+
+.getstarted:hover,
+.getstarted:focus:hover {
+  color: #111 !important;
+  /* background: #3194db; */
+  background-image: linear-gradient(#ff020b, #fc7500);
 }
 
 /*--------------------------------------------------------------
@@ -1900,6 +1936,26 @@ section {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 991px) {
+  .hide-sm {
+    display: none;
+    font-size: 0;
+    max-height: 0;
+    line-height: 0;
+    /* mso-hide: all; hide elements in Outlook 2007-2013 */
+  }
+}
+
+@media (min-width: 992px) {
+  .hide-lg {
+    display: none;
+    font-size: 0;
+    max-height: 0;
+    line-height: 0;
+    /* mso-hide: all; hide elements in Outlook 2007-2013 */
   }
 }
 
